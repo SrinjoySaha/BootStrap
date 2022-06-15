@@ -1,0 +1,24 @@
+{
+  "name": "bootstrap4",
+  "version": "1.0.0",
+  "description": "This is Directory for npm and git",
+  "main": "index.html",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SrinjoySaha/BootStrap.git"
+  },
+  "author": "Srinjoy Saha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SrinjoySaha/BootStrap/issues"
+  },
+  "homepage": "https://github.com/SrinjoySaha/BootStrap#readme",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  }
+}
