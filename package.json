@@ -20,5 +20,9 @@
   "homepage": "https://github.com/SrinjoySaha/BootStrap#readme",
   "devDependencies": {
     "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.1.3",
+    "jquery": "^3.6.0"
   }
 }
