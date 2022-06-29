@@ -31,8 +31,7 @@
                         <li class="nav-item"> <a class="nav-link" href="./contactus.html"><span class="fa fa-address-card fa-lg">Contact</span></a></li>   
                     </ul>
                     <span class="navbar-text">
-                        <a data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in">Login</span>
-                        </a>
+                        <a data-toggle="modal" data-target="#loginModal"><span class="fa fa-sign-in">Login</span></a>
                     </span>
                 </div>  
             </div>
@@ -51,27 +50,23 @@
                         <form>
                             <div>
                                 <div class="form-group col-sm-5">
-                                        <label class="sr-only" for="exampleInputEmail3">Email address</label>
-                                        <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="enter Email Id">
+                                    <label class="sr-only" for="exampleInputEmail3">Email address</label>
+                                    <input type="email" class="form-control form-control-sm mr-1" id="exampleInputEmail3" placeholder="enter Email Id">
                                 </div>
                                 <div class="form-group col-sm-5">
                                     <label class="sr-only" for="exampleInputPassword3">Password</label>
                                     <input type="password" class="form-control form-control-sm mr-1" id="exampleInputPassword3" placeholder="enter Password">
                                 </div>
-                                <!-- <div class="col-sm-auto">
-                                    
-                                </div> -->
-                                <div class="form-row">
+                                <div class="col-sm-4">
                                     <div class="form-check">
                                         <input class="form-check-input" type="checkbox">
                                         <label class="form-check-label"> Remember me</label>
                                     </div>
                                 </div>
-                            </div>
-                            <br>
-                            <div class="form-row">                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                ">
-                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
-                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>        
+                                <div class="form-row">
+                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                    <button type="button" class="btn btn-primary btn-sm ml-2">Sign in</button>
+                                </div>
                             </div>
                         </form>
                     </div>
@@ -89,10 +84,18 @@
                     <div class="col-12 col-sm-3 align-self-center">
                         <img src="img/logo.png" class="img-fluid">
                     </div>
-                        <div class="col-12 mt-4 mt-sm-0 col-sm-2 text-center align-self-center">
+                        <!--This is Tooltip to toggle to the required Reserve button form-->
+                        <!-- <div class="col-12 mt-4 mt-sm-0 col-sm-2 text-center align-self-center">
                             <a role="button" class="btn btn-block nav-link btn-warning"
-                        data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
-                        data-placement="bottom" href="#reserveform">Reserve Table</a>
+                            data-toggle="tooltip" data-html="true"  title="Or Call us at  <br><strong>+852 12345678</strong>"
+                            data-placement="bottom" href="#reserveform">Reserve Table</a>
+                        </div> -->
+
+                        <!--This is the Button reserve to open the dialog for reserving table-->
+                        <div class="col-12 mt-4 mt-sm-0 col-sm-2 text-center align-self-center">
+                            <span class="navbar-text">
+                                <a role="button" class="btn btn-block nav-link btn-warning" data-toggle="modal" data-target="#ReserveModal">Reserve Table</a>
+                            </span>
                         </div>
                 </div>
             </div>
@@ -144,7 +147,7 @@
                 </div>
             </div>
 
-            <!-- <div class="row row-content align-items-center">
+            <div class="row row-content align-items-center">
                 <div class="col-12 col-sm-4 col-md-4 order-sm-last">
                     <h3 class="Title-Header">Our Lipsmaking Culinary Creations</h3>
                 </div>
@@ -193,9 +196,9 @@
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
 
-            <div class="row row-content justify-content-center" id="Reservation">
+            <!-- <div class="row row-content justify-content-center" id="Reservation">
                 <div class="col-12 col-sm-7">
                     <div class="card">
                         <h3 class="card-header bg-warning text-white">Reserve a Table</h3>
@@ -250,6 +253,73 @@
                     
                 </div>
                 
+            </div> -->
+            <!--This is to display the Modal for Reserve table form-->    
+            <div id="ReserveModal" class="modal fade" role="dialog">
+                <div class="modal-dialog modal-lg" role="content">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h3 class="modal-title">Reserve a Table</h3>
+                            <button type="button" class="close" data-dismiss="modal">
+                              &times;  
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <div class="form-group row">
+                                    <label class="col-12 col-sm-2">Number of Guests</label>
+                                    <div class="col">
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="one_guest_radio" value="one">
+                                            <label class="form-check-label" for="one_guest_radio">1</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="two_guest_radio" value="two">
+                                            <label class="form-check-label" for="two_guest_radio">2</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="three_guest_radio" value="three" checked>
+                                            <label class="form-check-label" for="three_guest_radio">3</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="four_guest_radio" value="four">
+                                            <label class="form-check-label" for="four_guest_radio">4</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="five_guest_radio" value="six">
+                                            <label class="form-check-label" for="five_guest_radio">5</label>
+                                        </div>
+                                        <div class="form-check form-check-inline">
+                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="six_guest_radio" value="six">
+                                            <label class="form-check-label" for="six_guest_radio">6</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-12 col-sm-2">Section</label>
+                                    
+                                    <label class="btn btn-outline-success" for="success-outlined">Non-Smoking</label>
+                                    <label class="btn btn-outline-danger" for="danger-outlined">Smoking</label>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-12 col-sm-2">Date and Time</label>
+                                    <div class="col-12 col-sm-4">
+                                        <input type="text" class="form-control" id="date" placeholder="Date">
+                                    </div>
+                                    <div class="col-12 col-sm-4">
+                                        <input type="text" class="form-control" id="time" placeholder="Time">
+                                    </div>
+                                </div>
+                                <div class="form-group row">
+                                    <div class="col offset-0 offset-sm-2">
+                                        <button class="btn btn-secondary" data-dismiss="modal-cancel">Cancel</button>
+                                        <button class="btn btn-primary" type="submit">Reserve</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
@@ -299,10 +369,11 @@
         <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
         <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
         <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-        <script>
+        <!--This is to show tooltip on the Reserve button-->
+        <!-- <script>
             $(document).ready(function(){
                 $('[data-toggle="tooltip"]').tooltip();
             });
-        </script>
+        </script> -->
     </body>
 </html>

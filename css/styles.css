@@ -111,3 +111,15 @@
     left: 0;
     min-height: 300px;
 }
+
+.btn-outline-success {
+    background-color: #28a745;
+    background-image: none;
+    border-color: #28a745;
+}
+
+.btn-outline-danger {
+    background-color: #dc3545;;
+    background-image: none;
+    border-color: #dc3545;
+}
